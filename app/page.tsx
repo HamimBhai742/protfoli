@@ -5,6 +5,7 @@ import Education from "../components/sections/Education";
 import Skills from "../components/sections/Skills";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
+import Footer from "../components/sections/Footer";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <section id="contact" className="animate-slide-up animation-delay-1200">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 }

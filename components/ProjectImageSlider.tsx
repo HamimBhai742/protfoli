@@ -28,7 +28,7 @@ const ProjectImageSlider = ({ images, title }: ProjectImageSliderProps) => {
             src={images[currentImageIndex]}
             alt={`${title} - Image ${currentImageIndex + 1}`}
             fill
-            className="object-cover transition-all duration-500"
+            className=" transition-all duration-500"
             priority
           />
 
