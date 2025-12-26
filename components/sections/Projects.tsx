@@ -111,12 +111,12 @@ export default function Projects() {
                   </h3>
 
                   <p className='text-gray-300 mb-6 leading-relaxed'>
-                    {project.description}
+                    {project.description.slice(0, 250)} ...
                   </p>
 
                   {/* Tech stack */}
                   <div className='flex flex-wrap gap-2'>
-                    {project.tech.map((tech, i) => (
+                    {project.tech.slice(0, 9).map((tech, i) => (
                       <span
                         key={tech}
                         className='px-3 py-1 glass-effect rounded-full text-sm text-gray-300 border border-white/10 hover:border-white/30 transition-all duration-300 hover:scale-105'
@@ -142,10 +142,10 @@ export default function Projects() {
                       />
                     ))}
                   </div>
-                  <div>
+                  <div className='mt-6'>
                     <Link
                       href={`/project/${project.slug}`}
-                      className='absolute bottom-4 right-6 text-sm text-gray-400 hover:text-white underline transition-colors duration-300'
+                      className='absolute bottom-4 right-6 text-sm text-gray-400 hover:text-white hover:underline transition-colors duration-300'
                     >
                       View Details
                     </Link>

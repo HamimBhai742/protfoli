@@ -26,7 +26,7 @@ const ProjectDetailsPage = async ({ params }: { params: { slug: string } }) => {
         <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-indigo-400/20 rounded-full animate-float animation-delay-2000" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 py-20">
+      <div className="relative max-w-6xl mx-auto px-6 py-10">
         {/* Back Button */}
         <Link
           href="/#projects"
