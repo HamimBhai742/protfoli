@@ -62,25 +62,20 @@ export default function Education() {
 
   return (
     <section className='relative py-20 px-6 overflow-hidden'>
-      {/* Modern animated background */}
-      <div className='absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'>
-        <div className='absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),rgba(255,255,255,0))]' />
-        <div className='absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse' />
-        <div className='absolute top-0 right-1/4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000' />
-        <div className='absolute bottom-0 left-1/3 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000' />
-      </div>
+      {/* Background */}
+      <div className='absolute inset-0 bg-gradient-to-br from-slate-900/50 via-purple-900/30 to-slate-900/50' />
 
-      {/* Floating geometric shapes */}
+      {/* Floating Elements */}
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
-        <div className='absolute top-1/4 left-10 w-4 h-4 border border-white/20 rotate-45 animate-float' />
-        <div className='absolute top-1/3 right-10 w-6 h-6 border border-purple-400/30 rotate-12 animate-float animation-delay-1000' />
+        <div className='absolute top-1/4 left-10 w-4 h-4 border border-indigo-400/30 rotate-45 animate-float' />
+        <div className='absolute top-1/3 right-10 w-6 h-6 border border-purple-400/30 animate-float animation-delay-1000' />
         <div className='absolute bottom-1/4 left-1/4 w-3 h-3 bg-cyan-400/20 rounded-full animate-float animation-delay-2000' />
-        <div className='absolute bottom-1/3 right-1/3 w-5 h-5 border border-pink-400/30 animate-float animation-delay-3000' />
+        <div className='absolute bottom-1/3 right-1/3 w-5 h-5 border border-indigo-400/30 animate-float animation-delay-3000' />
       </div>
 
       <div className='relative max-w-6xl mx-auto'>
         <div className='text-center mb-16'>
-          <h2 className='text-5xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6'>
+          <h2 className='text-5xl font-bold gradient-text mb-6'>
             Education
           </h2>
           <p className='text-xl text-gray-300 max-w-2xl mx-auto'>
@@ -90,7 +85,7 @@ export default function Education() {
 
         <div className='relative'>
           {/* Timeline line - hidden on mobile */}
-          <div className='absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 transform -translate-x-0.5 hidden md:block' />
+          <div className='absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 via-purple-500 to-cyan-500 transform -translate-x-0.5 hidden md:block' />
 
           <div className='space-y-8 md:space-y-12'>
             {educationData.map((item, index) => (
@@ -104,11 +99,11 @@ export default function Education() {
               >
                 {/* Timeline dot - hidden on mobile */}
                 <div
-                  className={`absolute left-1/2 transform -translate-x-1/2 z-10 w-4 h-4 rounded-full border-4 bg-purple-500 border-purple-300 transition-all duration-300 ${
+                  className={`absolute left-1/2 transform -translate-x-1/2 z-10 w-4 h-4 rounded-full border-4 bg-indigo-500 border-indigo-300 transition-all duration-300 ${
                     hoveredItem === index ? 'scale-150 shadow-lg' : ''
                   } hidden md:block`}
                 >
-                  <div className='absolute inset-0 rounded-full animate-ping bg-purple-500 opacity-20' />
+                  <div className='absolute inset-0 rounded-full animate-ping bg-indigo-500 opacity-20' />
                 </div>
 
                 {/* Content card */}
@@ -125,22 +120,22 @@ export default function Education() {
                     }`}
                   >
                     {/* Animated background gradient */}
-                    <div className='absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300' />
+                    <div className='absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300' />
 
                     <div className='relative z-10'>
                       <div className='mb-4'>
-                        <h3 className='text-lg md:text-2xl font-bold text-white mb-1 group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-pink-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300'>
+                        <h3 className='text-lg md:text-2xl font-bold text-white mb-1 group-hover:gradient-text transition-all duration-300'>
                           {item.degree}
                         </h3>
                         <p className='text-base md:text-lg text-indigo-400 font-medium mb-2'>
                           {item.institution}
                         </p>
                         <div className='flex flex-col sm:flex-row sm:flex-wrap gap-2'>
-                          <span className='px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs md:text-sm'>
+                          <span className='px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs md:text-sm'>
                             {item.duration}
                           </span>
                           {item.gpa && (
-                            <span className='px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs md:text-sm'>
+                            <span className='px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs md:text-sm'>
                               GPA: {item.gpa}
                             </span>
                           )}
@@ -174,7 +169,7 @@ export default function Education() {
                           {item.courses.map((course, i) => (
                             <span
                               key={i}
-                              className='px-2 py-1 bg-gradient-to-r from-indigo-700 to-purple-800 text-indigo-200 rounded-full text-xs border border-indigo-600 hover:border-indigo-400 transition-colors duration-300'
+                              className='px-2 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs border border-indigo-500/30 hover:border-indigo-400 transition-colors duration-300'
                             >
                               {course}
                             </span>
@@ -188,7 +183,7 @@ export default function Education() {
                       {[...Array(3)].map((_, i) => (
                         <div
                           key={i}
-                          className='absolute w-1 h-1 bg-gradient-to-r from-indigo-400 to-pink-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping'
+                          className='absolute w-1 h-1 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping'
                           style={{
                             top: `${20 + i * 20}%`,
                             right: `${80 + i * 5}%`,

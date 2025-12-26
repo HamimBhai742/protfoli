@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin,  } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -51,15 +51,13 @@ export default function Contact() {
                 Follow Me
               </h4>
               <div className="flex space-x-4">
-                <a href="#" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+                <a href="https://github.com/HamimBhai742" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
                   <Github className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                 </a>
-                <a href="#" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+                <a href="https://www.linkedin.com/in/md-hamim42" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
                   <Linkedin className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                 </a>
-                <a href="#" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
-                  <Twitter className="w-5 h-5 text-gray-600 dark:text-gray-300" />
-                </a>
+
               </div>
             </div>
           </motion.div>
