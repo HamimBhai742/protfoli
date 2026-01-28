@@ -64,6 +64,7 @@ export default function Projects() {
                     }`}
                   >
                     <a
+                    target='_blank'
                       href={project.github}
                       className='group/btn glass-effect p-4 rounded-full hover:scale-110 transition-all duration-300 border border-white/20 hover:border-white/40'
                       title='View Code'
@@ -78,6 +79,7 @@ export default function Projects() {
                     </a>
 
                     <a
+                    target='_blank'
                       href={project.live}
                       className='group/btn glass-effect p-4 rounded-full hover:scale-110 transition-all duration-300 border border-white/20 hover:border-white/40'
                       title='Live Demo'
