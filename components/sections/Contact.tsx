@@ -84,7 +84,7 @@ export default function Contact() {
               <div className='flex items-center space-x-4'>
                 <MapPin className='w-5 h-5 text-blue-600' />
                 <span className='text-gray-600 dark:text-gray-300'>
-                  679/1, Zaha Box Lane, Gabtola, Boro Mogbazar, Dhaka - 1217
+                  679/1, Zaha Box Lane, Gabtola, Mogbazar, Dhaka - 1217
                 </span>
               </div>
             </div>
