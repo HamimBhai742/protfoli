@@ -32,7 +32,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Hamim',
-              url: 'https://personal-protfolio-gold.vercel.app',
+              url: 'https://hamim-protfolio.vercel.app',
               jobTitle: 'Full Stack Developer',
               sameAs: [
                 'https://github.com/HamimBhai742',

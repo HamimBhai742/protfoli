@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: "Hamim | Developer Portfolio",
     description: "Building scalable web apps with Next.js and React.",
-    url: "https://personal-protfolio-gold.vercel.app",
+    url: "https://hamim-protfolio.vercel.app",
     siteName: "Hamim Portfolio",
     images: [
       {
