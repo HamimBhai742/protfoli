@@ -9,8 +9,25 @@ import Footer from '../components/sections/Footer';
 import Experience from '../components/sections/Experience';
 
 export const metadata = {
-  title: 'Personal Portfolio - Hamim',
-  description: "Welcome to Hamim's personal portfolio website!",
+  title: "Hamim | Backend Developer",
+  description: "Portfolio of Hamim - Next.js, React, Node.js Developer",
+  keywords: ["Next.js developer", "React developer", "Full stack developer", "Backend developer", "MERN stack developer"],
+  authors: [{ name: "Hamim" }],
+  openGraph: {
+    title: "Hamim | Developer Portfolio",
+    description: "Building scalable web apps with Next.js and React.",
+    url: "https://personal-protfolio-gold.vercel.app",
+    siteName: "Hamim Portfolio",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function Home() {

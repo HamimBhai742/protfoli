@@ -11,11 +11,11 @@ export default function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const words = [
+    'Backend Developer',
     'Full Stack Developer',
     'MERN Stack Developer',
     'Junior Developer',
     'Frontend Developer',
-    'Backend Developer',
   ];
 
   useEffect(() => {

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function About() {
@@ -34,10 +35,21 @@ export default function About() {
               {/* Main photo container */}
               <div className='relative w-80 h-80 rounded-full overflow-hidden glass-effect transition-all duration-500 group-hover:scale-105 animate-glow'>
                 {/* Profile Image - Replace src with your actual image */}
-                <img
-                  src='/imglogo.jpeg'
+                {/* <img
+                  src='/Hamim_Linkdin.jpeg'
                   alt='Profile'
                   className='w-full h-full object-cover'
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                /> */}
+
+                 <Image
+                  src='/logo.png'
+                  alt='Profile'
+                  className='w-full h-full '
+                  width={200}
+                  height={200}
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                   }}
@@ -57,12 +69,12 @@ export default function About() {
                     isHovered ? 'opacity-100' : 'opacity-0'
                   }`}
                 >
-                  <div className='absolute bottom-6 left-6 right-6 text-white transform transition-transform duration-500'>
+                  <div className='absolute bottom-10 left-14 right-0 text-white transform transition-transform duration-500'>
                     <p className='text-lg font-semibold linear-text'>
-                      Full Stack Developer
+                      Backend Developer
                     </p>
                     <p className='text-sm opacity-90'>
-                      Passionate about creating amazing web experiences
+                      SM Technology
                     </p>
                   </div>
                 </div>
@@ -82,7 +94,7 @@ export default function About() {
               <div className='space-y-4 text-gray-300 leading-relaxed'>
                 <p>
                   Hello! I’m Hamim, a passionate and curious{' '}
-                  <strong>Junior Full-Stack Web Developer</strong> who loves
+                  <strong>Junior Backend Developer </strong> who loves
                   turning ideas into real, usable digital products.
                 </p>
                 <p>
