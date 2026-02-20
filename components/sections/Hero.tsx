@@ -124,7 +124,7 @@ export default function Hero() {
 
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1Uvvlyse3QMtuTiAxezODG4ByeFLYfaVU/view?usp=sharing'
+              href='https://drive.google.com/file/d/1bRZyPB7OaMO66y6xluVMD-ZR1GX7Xt6x/view?usp=sharing'
               className='group flex items-center gap-2 px-8 py-4 glass-effect rounded-full text-white font-semibold transition-all duration-300 hover:scale-105 border border-white/20 hover:border-white/40'
             >
               Download CV
